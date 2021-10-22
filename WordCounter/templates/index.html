@@ -1,6 +1,8 @@
+ {%load static %}
+ 
  <hmtl>
 <h1>Input your text below:</h1>
-
+<link rel="stylesheet" href="{% static 'styles.css' %}">
 <form method="POST" action="counter">
 {%csrf_token%}
 <textarea name="text" id="" cols="100" rows="25"></textarea><br>
